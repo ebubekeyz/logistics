@@ -1,6 +1,6 @@
 import { Outlet, useNavigation } from 'react-router-dom';
 
-import { Loading } from '../component';
+import { Header, Loading } from '../component';
 
 const HomeLayout = () => {
   const navigation = useNavigation();
@@ -12,6 +12,7 @@ const HomeLayout = () => {
         <Loading />
       ) : (
         <div>
+          <Header />
           <Outlet />
         </div>
       )}
