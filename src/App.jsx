@@ -1,6 +1,20 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import { About, Error, HomeLayout, Landing } from './pages';
+import {
+  About,
+  Blog,
+  Booking,
+  Contact,
+  Error,
+  Gallery,
+  History,
+  HomeLayout,
+  Landing,
+  Login,
+  Profile,
+  Register,
+  Services,
+} from './pages';
 import { ErrorElement } from './component';
 
 const router = createBrowserRouter([
@@ -17,6 +31,52 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'services',
+        element: <Services />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'gallery',
+        element: <Gallery />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'blog',
+        element: <Blog />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'booking',
+        element: <Booking />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'history',
+        element: <History />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'profile',
+        element: <Profile />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'login',
+        element: <Login />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'register',
+        element: <Register />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'contact',
+        element: <Contact />,
+        errorElement: <ErrorElement />,
       },
     ],
   },

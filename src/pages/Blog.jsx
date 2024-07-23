@@ -1,11 +1,11 @@
-const About = () => {
+const Blog = () => {
   return (
     <div>
-      {' '}
       {/* =-=-=-=-=-=-= PRELOADER =-=-=-=-=-=-= */}
       <div className="preloader">
         <span className="preloader-gif"></span>
       </div>
+
       {/* =-=-=-=-=-=-= Color Switcher =-=-=-=-=-=-= */}
       <div className="color-switcher" id="choose_color">
         {' '}
@@ -38,6 +38,7 @@ const About = () => {
         </div>
         <div className="clr"> </div>
       </div>
+
       {/* =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= */}
       <section className="top-bar">
         <div className="container">
@@ -213,7 +214,7 @@ const About = () => {
                       </li>
                     </ul>
                   </li>
-                  <li className="dropdown active">
+                  <li className="dropdown">
                     <a
                       className="dropdown-toggle"
                       data-hover="dropdown"
@@ -262,7 +263,7 @@ const About = () => {
                   <li className="hidden-sm">
                     <a href="gallery.html">Gallery</a>
                   </li>
-                  <li className="dropdown  hidden-sm">
+                  <li className="dropdown active hidden-sm">
                     <a
                       className="dropdown-toggle"
                       data-hover="dropdown"
@@ -374,14 +375,15 @@ const About = () => {
         {/* Menu  End */}
       </header>
       {/* =-=-=-=-=-=-= HEADER END =-=-=-=-=-=-= */}
+
       {/* =-=-=-=-=-=-= PAGE BREADCRUMB =-=-=-=-=-=-= */}
       <section className="breadcrumbs-area parallex">
         <div className="container">
           <div className="row">
             <div className="page-title">
               <div className="col-sm-12 col-md-6 page-heading text-left">
-                <h3>Who we are</h3>
-                <h2>About Our Company</h2>
+                <h3>Our feeds </h3>
+                <h2>Latest News</h2>
               </div>
               <div className="col-sm-12 col-md-6 text-right">
                 <ul className="breadcrumbs">
@@ -392,7 +394,7 @@ const About = () => {
                     <a href="#">pages</a>
                   </li>
                   <li>
-                    <a href="#">about our projects</a>
+                    <a href="#">blog</a>
                   </li>
                 </ul>
               </div>
@@ -401,282 +403,376 @@ const About = () => {
         </div>
       </section>
       {/* =-=-=-=-=-=-= PAGE BREADCRUMB END =-=-=-=-=-=-= */}
-      {/* =-=-=-=-=-=-= About Section =-=-=-=-=-=-= */}
-      <section className="padding-top-70" id="about">
+
+      {/* =-=-=-=-=-=-= Blog & News =-=-=-=-=-=-= */}
+      <section id="blog" className="custom-padding">
         <div className="container">
-          <div className="row clearfix">
-            {/*Column*/}
-            <div className="col-md-7 col-sm-12 col-xs-12 ">
-              <div className="about-title">
-                <h2>We Provide Services All Over The World</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent congue justo scelerisque mattis iaculis. Maecenas
-                  vestibulum faucibus enim scelerisque egestas. Praesent
-                  facilisis, tortor vel vehicula imperdiet, felis massa ultrices
-                  metus, sed consectetur massa ex vitae sem. Integer eu sodales
-                  augue. Suspendisse eget placerat lorem. Phasellus ac hendrerit
-                  leo. Morbi quis iaculis eros. Sed tincidunt augue ante, sit
-                  amet vehicula odio aliquam quis. Donec at malesuada nisl.
-                  Pellentesque eros lorem, aliquet id hendrerit id, hendrerit ac
-                  odio. In dui mauris, auctor vel vestibulum vitae, tincidunt id
-                  mi.{' '}
-                </p>
-                <p>
-                  Curabitur dictum, sapien eu mattis pretium, ligula lorem
-                  sollicitudin mi, in gravida augue magna eu metus. Interdum et
-                  malesuada fames ac ante ipsum primis in faucibus. Duis a
-                  ultrices tortor. Sed rutrum arcu mi, nec aliquet magna
-                  venenatis non. Nullam lectus neque, semper nec accumsan quis,
-                  ullamcorper eget risus. Nullam tristique mi nec dui bibendum
-                  egestas. Integer libero diam, dictum id faucibus id, lacinia
-                  eget lorem. Ut condimentum, lorem at eleifend pharetra, urna
-                  turpis ultrices nunc, sit amet suscipit nisl metus sit amet
-                  elit. Nam tristique mollis molestie. Maecenas bibendum rhoncus
-                  nisi, sit amet blandit tortor placerat nec. Sed nec aliquam
-                  tortor, ut vehicula eros. Vestibulum id ligula vel nunc mattis
-                  pharetra in non lectus. Etiam quis blandit ante. Donec non
-                  hendrerit justo, rhoncus iaculis sem. In varius finibus eros
-                  quis dictum tortor eu metus.
-                </p>
-
-                <p>
-                  Pellentesque pharetra orci quam, vel scelerisque massa semper
-                  et. Fusce vel tortor eu metus rhoncus blandit a vel turpis.
-                  Suspendisse sed facilisis lacus. Integer mattis interdum
-                  neque, non molestie risus facilisis et. Donec gravida luctus
-                  laoreet. Curabitur quis iaculis velit. Maecenas ut tincidunt
-                  elit, sed ultricies lectus.{' '}
-                </p>
-              </div>
-            </div>
-
-            {/* RIght Grid Form */}
-            <div className="col-md-5 col-sm-12 col-xs-12 our-gallery">
-              <a className="tt-lightbox" href="images/about-company-1.png">
-                {' '}
-                <img
-                  className="img-responsive margin-bottom-30"
-                  alt="Image"
-                  src="images/about-company-1.png"
-                />
-              </a>
-              <a className="tt-lightbox" href="images/about-company-2.png">
-                {' '}
-                <img
-                  className="img-responsive margin-bottom-30"
-                  alt="Image"
-                  src="images/about-company-2.png"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* =-=-=-=-=-=-= About End =-=-=-=-=-=-= */}
-      {/* =-=-=-=-=-=-= SEPARATOR Fun Facts =-=-=-=-=-=-= */}
-      <div className="parallex section-padding-70 fun-facts-bg text-center">
-        <div className="container">
-          <div className="row">
-            {/* countTo */}
-            <div className="col-xs-6 col-sm-3 col-md-3">
-              <div className="statistic-percent" data-perc="356">
-                <div className="facts-icons">
-                  {' '}
-                  <span className="flaticon-woman-with-headset"></span>{' '}
-                </div>
-                <div className="fact">
-                  {' '}
-                  <span className="percentfactor">356</span>
-                  <p>Happy Clients</p>
-                </div>
-                {/* end fact */}
-              </div>
-              {/* end statistic-percent */}
-            </div>
-            {/* end col-xs-6 col-sm-3 col-md-3 */}
-
-            {/* countTo */}
-            <div className="col-xs-6 col-sm-3 col-md-3">
-              <div className="statistic-percent" data-perc="126">
-                <div className="facts-icons">
-                  {' '}
-                  <span className="flaticon-commercial-delivery-symbol-of-a-list-on-clipboard-on-a-box-package"></span>{' '}
-                </div>
-                <div className="fact">
-                  {' '}
-                  <span className="percentfactor">126</span>
-                  <p>Order Received</p>
-                </div>
-                {/* end fact */}
-              </div>
-              {/* end statistic-percent */}
-            </div>
-            {/* end col-xs-6 col-sm-3 col-md-3 */}
-
-            {/* countTo */}
-            <div className="col-xs-6 col-sm-3 col-md-3">
-              <div className="statistic-percent" data-perc="274">
-                <div className="facts-icons">
-                  {' '}
-                  <span className="flaticon-free-delivery-truck"></span>{' '}
-                </div>
-                <div className="fact">
-                  {' '}
-                  <span className="percentfactor">274</span>
-                  <p>Free Delivery</p>
-                </div>
-                {/* end fact */}
-              </div>
-              {/* end statistic-percent */}
-            </div>
-            {/* end col-xs-6 col-sm-3 col-md-3 */}
-
-            {/* countTo */}
-            <div className="col-xs-6 col-sm-3 col-md-3">
-              <div className="statistic-percent" data-perc="434">
-                <div className="facts-icons">
-                  {' '}
-                  <span className="flaticon-ocean-transportation"></span>{' '}
-                </div>
-                <div className="fact">
-                  {' '}
-                  <span className="percentfactor">434</span>
-                  <p>Completed Projects</p>
-                </div>
-                {/* end fact */}
-              </div>
-              {/* end statistic-percent */}
-            </div>
-            {/* end col-xs-6 col-sm-3 col-md-3 */}
-          </div>
-          {/* End row */}
-        </div>
-        {/* end container */}
-      </div>
-      {/* =-=-=-=-=-=-= SEPARATOR END =-=-=-=-=-=-= */}
-      {/* =-=-=-=-=-=-= Our Team =-=-=-=-=-=-= */}
-      <section id="team" className="custom-padding white">
-        <div className="container">
-          {/* title-section */}
-          <div className="main-heading text-center">
-            <h2>our caretakes</h2>
-            <p>
-              Cras varius purus in tempus porttitor ut dapibus efficitur
-              sagittis cras vitae lacus metus nunc vulputate facilisis nisi{' '}
-              <br /> eu lobortis erat consequat ut. Aliquam et justo ante. Nam a
-              cursus velit
-            </p>
-          </div>
-          {/* End title-section */}
-
           {/* Row */}
           <div className="row">
-            {/* Team Grid */}
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <div className="team-grid">
-                <div className="team-image">
-                  <img
-                    alt=""
-                    className="img-responsive"
-                    src="images/team/1.jpg"
-                  />
-                  <div className="team-grid-overlay">
-                    <div className="social-media">
-                      <a className="facebook" href="#">
-                        <i className="fa fa-facebook"></i>
+            <div className="col-sm-12 col-xs-12 col-md-12">
+              {/* blog-grid */}
+              <div className="col-md-4 col-sm-12 col-xs-12">
+                <div className="news-box">
+                  <div className="news-thumb">
+                    <a href="blog-detail.html">
+                      <img
+                        alt=""
+                        className="img-responsive"
+                        src="images/blog/1.jpg"
+                      />
+                    </a>
+                    <div className="date">
+                      {' '}
+                      <strong>21</strong>
+                      <span>Jun</span>{' '}
+                    </div>
+                  </div>
+                  <div className="news-detail">
+                    <h2>
+                      <a title="" href="blog-detail.html">
+                        top benefits of hiring our logistics service
                       </a>
-                      <a className="twitter" href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a className="google" href="#">
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      <a className="linkedin" href="#">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo enean dolor sit amet, consectetuer.
+                    </p>
+                    <div className="entry-footer">
+                      <div className="post-meta">
+                        <div className="post-admin">
+                          {' '}
+                          <i className="icon-profile-male"></i>Posted by
+                          <a href="#">Admin</a>{' '}
+                        </div>
+                        <div className="post-comment">
+                          {' '}
+                          <i className="icon-chat"></i> <a href="#">217</a>{' '}
+                        </div>
+                        <div className="post-like">
+                          {' '}
+                          <i className="icon-heart"></i> <a href="#">130</a>{' '}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="team-content">
-                  <h2>Roman Reigns</h2>
-                  <p>Founder</p>
-                </div>
               </div>
-            </div>
-            {/* Team Grid End*/}
-            {/* Team Grid */}
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <div className="team-grid">
-                <div className="team-image">
-                  <img
-                    alt=""
-                    className="img-responsive"
-                    src="images/team/2.jpg"
-                  />
-                  <div className="team-grid-overlay">
-                    <div className="social-media">
-                      <a className="facebook" href="#">
-                        <i className="fa fa-facebook"></i>
+
+              {/* blog-grid end */}
+
+              {/* blog-grid */}
+              <div className="col-md-4 col-sm-12 col-xs-12">
+                <div className="news-box">
+                  <div className="news-thumb">
+                    <a href="blog-detail.html">
+                      <img
+                        alt=""
+                        className="img-responsive"
+                        src="images/blog/2.jpg"
+                      />
+                    </a>
+                    <div className="date">
+                      {' '}
+                      <strong>21</strong>
+                      <span>Jun</span>{' '}
+                    </div>
+                  </div>
+                  <div className="news-detail">
+                    <h2>
+                      <a title="" href="blog-detail.html">
+                        top benefits of hiring our logistics service
                       </a>
-                      <a className="twitter" href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a className="google" href="#">
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      <a className="linkedin" href="#">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo enean dolor sit amet, consectetuer.
+                    </p>
+                    <div className="entry-footer">
+                      <div className="post-meta">
+                        <div className="post-admin">
+                          {' '}
+                          <i className="icon-profile-male"></i>Posted by
+                          <a href="#">Admin</a>{' '}
+                        </div>
+                        <div className="post-comment">
+                          {' '}
+                          <i className="icon-chat"></i> <a href="#">217</a>{' '}
+                        </div>
+                        <div className="post-like">
+                          {' '}
+                          <i className="icon-heart"></i> <a href="#">130</a>{' '}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="team-content">
-                  <h2>Jean Carron</h2>
-                  <p>Director</p>
-                </div>
               </div>
-            </div>
-            {/* Team Grid End*/}
-            {/* Team Grid */}
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <div className="team-grid">
-                <div className="team-image">
-                  <img
-                    alt=""
-                    className="img-responsive"
-                    src="images/team/3.jpg"
-                  />
-                  <div className="team-grid-overlay">
-                    <div className="social-media">
-                      <a className="facebook" href="#">
-                        <i className="fa fa-facebook"></i>
+              {/* blog-grid end */}
+
+              {/* blog-grid */}
+              <div className="col-md-4 col-sm-12 col-xs-12">
+                <div className="news-box">
+                  <div className="news-thumb">
+                    <a href="blog-detail.html">
+                      <img
+                        className="img-responsive"
+                        alt=""
+                        src="images/blog/3.jpg"
+                      />
+                    </a>
+                    <div className="date">
+                      {' '}
+                      <strong>21</strong>
+                      <span>Jun</span>{' '}
+                    </div>
+                  </div>
+                  <div className="news-detail">
+                    <h2>
+                      <a title="" href="blog-detail.html">
+                        top benefits of hiring our logistics service
                       </a>
-                      <a className="twitter" href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a className="google" href="#">
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      <a className="linkedin" href="#">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo enean dolor sit amet, consectetuer.
+                    </p>
+                    <div className="entry-footer">
+                      <div className="post-meta">
+                        <div className="post-admin">
+                          {' '}
+                          <i className="icon-profile-male"></i>Posted by
+                          <a href="#">Admin</a>{' '}
+                        </div>
+                        <div className="post-comment">
+                          {' '}
+                          <i className="icon-chat"></i> <a href="#">217</a>{' '}
+                        </div>
+                        <div className="post-like">
+                          {' '}
+                          <i className="icon-heart"></i> <a href="#">130</a>{' '}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="team-content">
-                  <h2>Arslan Tariq</h2>
-                  <p>CEO</p>
+              </div>
+              {/* blog-grid end */}
+
+              <div className="clearfix"></div>
+
+              {/* blog-grid */}
+              <div className="col-md-4 col-sm-12 col-xs-12">
+                <div className="news-box">
+                  <div className="news-thumb">
+                    <a href="blog-detail.html">
+                      <img
+                        alt=""
+                        className="img-responsive"
+                        src="images/blog/4.jpg"
+                      />
+                    </a>
+                    <div className="date">
+                      {' '}
+                      <strong>21</strong>
+                      <span>Jun</span>{' '}
+                    </div>
+                  </div>
+                  <div className="news-detail">
+                    <h2>
+                      <a title="" href="blog-detail.html">
+                        top benefits of hiring our logistics service
+                      </a>
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo enean dolor sit amet, consectetuer.
+                    </p>
+                    <div className="entry-footer">
+                      <div className="post-meta">
+                        <div className="post-admin">
+                          {' '}
+                          <i className="icon-profile-male"></i>Posted by
+                          <a href="#">Admin</a>{' '}
+                        </div>
+                        <div className="post-comment">
+                          {' '}
+                          <i className="icon-chat"></i> <a href="#">217</a>{' '}
+                        </div>
+                        <div className="post-like">
+                          {' '}
+                          <i className="icon-heart"></i> <a href="#">130</a>{' '}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              {/* blog-grid end */}
+
+              {/* blog-grid */}
+              <div className="col-md-4 col-sm-12 col-xs-12">
+                <div className="news-box">
+                  <div className="news-thumb">
+                    <a href="blog-detail.html">
+                      <img
+                        alt=""
+                        className="img-responsive"
+                        src="images/blog/8.jpg"
+                      />
+                    </a>
+                    <div className="date">
+                      {' '}
+                      <strong>21</strong>
+                      <span>Jun</span>{' '}
+                    </div>
+                  </div>
+                  <div className="news-detail">
+                    <h2>
+                      <a title="" href="blog-detail.html">
+                        top benefits of hiring our logistics service
+                      </a>
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo enean dolor sit amet, consectetuer.
+                    </p>
+                    <div className="entry-footer">
+                      <div className="post-meta">
+                        <div className="post-admin">
+                          {' '}
+                          <i className="icon-profile-male"></i>Posted by
+                          <a href="#">Admin</a>{' '}
+                        </div>
+                        <div className="post-comment">
+                          {' '}
+                          <i className="icon-chat"></i> <a href="#">217</a>{' '}
+                        </div>
+                        <div className="post-like">
+                          {' '}
+                          <i className="icon-heart"></i> <a href="#">130</a>{' '}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* blog-grid end */}
+
+              {/* blog-grid */}
+              <div className="col-md-4 col-sm-12 col-xs-12">
+                <div className="news-box">
+                  <div className="news-thumb">
+                    <a href="blog-detail.html">
+                      <img
+                        className="img-responsive"
+                        alt=""
+                        src="images/blog/6.jpg"
+                      />
+                    </a>
+                    <div className="date">
+                      {' '}
+                      <strong>21</strong>
+                      <span>Jun</span>{' '}
+                    </div>
+                  </div>
+                  <div className="news-detail">
+                    <h2>
+                      <a title="" href="blog-detail.html">
+                        top benefits of hiring our logistics service
+                      </a>
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo enean dolor sit amet, consectetuer.
+                    </p>
+                    <div className="entry-footer">
+                      <div className="post-meta">
+                        <div className="post-admin">
+                          {' '}
+                          <i className="icon-profile-male"></i>Posted by
+                          <a href="#">Admin</a>{' '}
+                        </div>
+                        <div className="post-comment">
+                          {' '}
+                          <i className="icon-chat"></i> <a href="#">217</a>{' '}
+                        </div>
+                        <div className="post-like">
+                          {' '}
+                          <i className="icon-heart"></i> <a href="#">130</a>{' '}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* blog-grid end */}
+
+              <div className="clearfix"></div>
+
+              {/* Pagination */}
+              <div className="text-center clearfix">
+                <ul className="pagination ">
+                  <li>
+                    <a aria-label="Previous" href="#">
+                      <span aria-hidden="true">&lt;</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">1</a>
+                  </li>
+                  <li className="active">
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a aria-label="Next" href="#">
+                      <span aria-hidden="true">&gt;</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              {/* Pagination end */}
             </div>
-            {/* Team Grid End*/}
           </div>
+
           {/* Row End */}
         </div>
         {/* end container */}
       </section>
-      {/* =-=-=-=-=-=-= Our Team End =-=-=-=-=-=-= */}
+      {/* =-=-=-=-=-=-= Blog & News end =-=-=-=-=-=-= */}
+
+      {/* =-=-=-=-=-=-= Call To Action =-=-=-=-=-=-= */}
+      <div className="parallex-small ">
+        <div className="container">
+          <div className="row custom-padding-20 ">
+            {' '}
+            <div className="col-md-8 col-sm-8">
+              <div className="parallex-text">
+                <h4>Not sure which solution fits you business needs?</h4>
+              </div>
+              {/* end subsection-text */}
+            </div>
+            {/* end col-md-8 */}
+            <div className="col-md-4 col-sm-4">
+              <div className="parallex-button">
+                {' '}
+                <a href="javascript:void(0)" className="btn btn-lg btn-clean">
+                  Get a quote <i className="fa fa-angle-double-right "></i>
+                </a>{' '}
+              </div>
+              {/* end parallex-button */}
+            </div>
+            {/* end col-md-4 */}
+          </div>
+          {/* end row */}
+        </div>
+        {/* end container */}
+      </div>
+      {/* =-=-=-=-=-=-= Call To Action End =-=-=-=-=-=-= */}
+
       {/* =-=-=-=-=-=-= FOOTER =-=-=-=-=-=-= */}
       <footer className="footer-area">
         {/*Footer Upper*/}
@@ -851,6 +947,7 @@ const About = () => {
           </div>
         </div>
       </footer>
+
       {/* =-=-=-=-=-=-= Quote Modal =-=-=-=-=-=-= */}
       <div
         data-target="#request-quote"
@@ -862,6 +959,7 @@ const About = () => {
         </a>
       </div>
       {/* =-=-=-=-=-=-= Quote Modal End =-=-=-=-=-=-= */}
+
       {/* =-=-=-=-=-=-= JQUERY =-=-=-=-=-=-= */}
       <script src="js/jquery.min.js"></script>
       {/* Bootstrap Core Css  */}
@@ -1196,4 +1294,4 @@ const About = () => {
     </div>
   );
 };
-export default About;
+export default Blog;

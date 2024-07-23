@@ -27,6 +27,8 @@
     <!-- =-=-=-=-=-=-= Owl carousel =-=-=-=-=-=-= -->
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.style.css" />
+    <!-- =-=-=-=-=-=-= For This Page Only =-=-=-=-=-=-= -->
+    <link href="css/select2.min.css" rel="stylesheet" />
     <!-- =-=-=-=-=-=-= Google Fonts =-=-=-=-=-=-= -->
     <link
       href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic,900italic,900,300,300italic"
@@ -239,5 +241,87 @@
       type="text/javascript"
       src="js/revolution-slider/js/extensions/revolution.extension.video.min.js"
     ></script>
+
+    <script src="js/select2.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        /* ======= Jquery Select Options ======= */
+        $('.country').select2({
+          placeholder: 'Select Departure Location',
+          allowClear: true,
+        });
+
+        $('.delivery').select2({
+          placeholder: 'Select Delivery  Location',
+          allowClear: true,
+        });
+
+        $('.weight').select2({
+          placeholder: 'Select Weight Unit',
+          allowClear: true,
+        });
+
+        $('.packaging').select2({
+          placeholder: 'Select Packaging Unit',
+          allowClear: true,
+        });
+
+        $('.cargo-type').select2({
+          placeholder: 'Select Cargo Type',
+          allowClear: true,
+        });
+
+        $('.insurance').select2({
+          placeholder: 'Select Insurance Required?',
+          allowClear: true,
+        });
+        /* ======= Date Time Picker ======= */
+        $('#datetimepicker1').datetimepicker();
+      });
+    </script>
+
+    <!-- Google map api -->
+
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVj6yChAfe1ilA4YrZgn_UCAnei8AhQxQ&amp;sensor=false"
+    ></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/validator.min.js"></script>
+    <script type="text/javascript">
+      (function ($) {
+        'use strict';
+
+        $('#contactForm')
+          .validator()
+          .on('submit', function (e) {
+            if (e.isDefaultPrevented()) {
+              // handle the invalid form...
+            } else {
+              $('#yes').html('Processsing...');
+              $('#loader').show();
+              $.ajax({
+                type: 'POST',
+                url: 'php/contact.php',
+                data: $('#contactForm').serialize(), //only input
+
+                success: function (response) {
+                  if (response == 'success') {
+                    $('#success').show();
+                    $('#loader').hide();
+                    $('#yes').html('Done Email...');
+                    $('#contactForm').each(function () {
+                      this.reset();
+                    });
+                  }
+                },
+              });
+              return false;
+            }
+          });
+      })(jQuery);
+    </script>
   </body>
 </html>

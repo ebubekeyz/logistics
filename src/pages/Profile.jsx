@@ -1,11 +1,11 @@
-const About = () => {
+const Profile = () => {
   return (
     <div>
-      {' '}
       {/* =-=-=-=-=-=-= PRELOADER =-=-=-=-=-=-= */}
       <div className="preloader">
         <span className="preloader-gif"></span>
       </div>
+
       {/* =-=-=-=-=-=-= Color Switcher =-=-=-=-=-=-= */}
       <div className="color-switcher" id="choose_color">
         {' '}
@@ -38,6 +38,7 @@ const About = () => {
         </div>
         <div className="clr"> </div>
       </div>
+
       {/* =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= */}
       <section className="top-bar">
         <div className="container">
@@ -118,7 +119,7 @@ const About = () => {
           <div className="container clearfix">
             {/* Logo */}
             <div className="logo">
-              <a href="index.html">
+              <a href="/">
                 <img src="images/logo.png" alt="" />
               </a>
             </div>
@@ -213,7 +214,7 @@ const About = () => {
                       </li>
                     </ul>
                   </li>
-                  <li className="dropdown active">
+                  <li className="dropdown">
                     <a
                       className="dropdown-toggle"
                       data-hover="dropdown"
@@ -374,14 +375,15 @@ const About = () => {
         {/* Menu  End */}
       </header>
       {/* =-=-=-=-=-=-= HEADER END =-=-=-=-=-=-= */}
+
       {/* =-=-=-=-=-=-= PAGE BREADCRUMB =-=-=-=-=-=-= */}
       <section className="breadcrumbs-area parallex">
         <div className="container">
           <div className="row">
             <div className="page-title">
               <div className="col-sm-12 col-md-6 page-heading text-left">
-                <h3>Who we are</h3>
-                <h2>About Our Company</h2>
+                <h3>my account </h3>
+                <h2>My Profile</h2>
               </div>
               <div className="col-sm-12 col-md-6 text-right">
                 <ul className="breadcrumbs">
@@ -392,7 +394,7 @@ const About = () => {
                     <a href="#">pages</a>
                   </li>
                   <li>
-                    <a href="#">about our projects</a>
+                    <a href="#">profile</a>
                   </li>
                 </ul>
               </div>
@@ -401,282 +403,418 @@ const About = () => {
         </div>
       </section>
       {/* =-=-=-=-=-=-= PAGE BREADCRUMB END =-=-=-=-=-=-= */}
-      {/* =-=-=-=-=-=-= About Section =-=-=-=-=-=-= */}
-      <section className="padding-top-70" id="about">
+
+      {/* =-=-=-=-=-=-= Blog & News =-=-=-=-=-=-= */}
+      <section id="blog" className="custom-padding">
         <div className="container">
-          <div className="row clearfix">
-            {/*Column*/}
-            <div className="col-md-7 col-sm-12 col-xs-12 ">
-              <div className="about-title">
-                <h2>We Provide Services All Over The World</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent congue justo scelerisque mattis iaculis. Maecenas
-                  vestibulum faucibus enim scelerisque egestas. Praesent
-                  facilisis, tortor vel vehicula imperdiet, felis massa ultrices
-                  metus, sed consectetur massa ex vitae sem. Integer eu sodales
-                  augue. Suspendisse eget placerat lorem. Phasellus ac hendrerit
-                  leo. Morbi quis iaculis eros. Sed tincidunt augue ante, sit
-                  amet vehicula odio aliquam quis. Donec at malesuada nisl.
-                  Pellentesque eros lorem, aliquet id hendrerit id, hendrerit ac
-                  odio. In dui mauris, auctor vel vestibulum vitae, tincidunt id
-                  mi.{' '}
-                </p>
-                <p>
-                  Curabitur dictum, sapien eu mattis pretium, ligula lorem
-                  sollicitudin mi, in gravida augue magna eu metus. Interdum et
-                  malesuada fames ac ante ipsum primis in faucibus. Duis a
-                  ultrices tortor. Sed rutrum arcu mi, nec aliquet magna
-                  venenatis non. Nullam lectus neque, semper nec accumsan quis,
-                  ullamcorper eget risus. Nullam tristique mi nec dui bibendum
-                  egestas. Integer libero diam, dictum id faucibus id, lacinia
-                  eget lorem. Ut condimentum, lorem at eleifend pharetra, urna
-                  turpis ultrices nunc, sit amet suscipit nisl metus sit amet
-                  elit. Nam tristique mollis molestie. Maecenas bibendum rhoncus
-                  nisi, sit amet blandit tortor placerat nec. Sed nec aliquam
-                  tortor, ut vehicula eros. Vestibulum id ligula vel nunc mattis
-                  pharetra in non lectus. Etiam quis blandit ante. Donec non
-                  hendrerit justo, rhoncus iaculis sem. In varius finibus eros
-                  quis dictum tortor eu metus.
-                </p>
-
-                <p>
-                  Pellentesque pharetra orci quam, vel scelerisque massa semper
-                  et. Fusce vel tortor eu metus rhoncus blandit a vel turpis.
-                  Suspendisse sed facilisis lacus. Integer mattis interdum
-                  neque, non molestie risus facilisis et. Donec gravida luctus
-                  laoreet. Curabitur quis iaculis velit. Maecenas ut tincidunt
-                  elit, sed ultricies lectus.{' '}
-                </p>
-              </div>
-            </div>
-
-            {/* RIght Grid Form */}
-            <div className="col-md-5 col-sm-12 col-xs-12 our-gallery">
-              <a className="tt-lightbox" href="images/about-company-1.png">
-                {' '}
-                <img
-                  className="img-responsive margin-bottom-30"
-                  alt="Image"
-                  src="images/about-company-1.png"
-                />
-              </a>
-              <a className="tt-lightbox" href="images/about-company-2.png">
-                {' '}
-                <img
-                  className="img-responsive margin-bottom-30"
-                  alt="Image"
-                  src="images/about-company-2.png"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* =-=-=-=-=-=-= About End =-=-=-=-=-=-= */}
-      {/* =-=-=-=-=-=-= SEPARATOR Fun Facts =-=-=-=-=-=-= */}
-      <div className="parallex section-padding-70 fun-facts-bg text-center">
-        <div className="container">
-          <div className="row">
-            {/* countTo */}
-            <div className="col-xs-6 col-sm-3 col-md-3">
-              <div className="statistic-percent" data-perc="356">
-                <div className="facts-icons">
-                  {' '}
-                  <span className="flaticon-woman-with-headset"></span>{' '}
-                </div>
-                <div className="fact">
-                  {' '}
-                  <span className="percentfactor">356</span>
-                  <p>Happy Clients</p>
-                </div>
-                {/* end fact */}
-              </div>
-              {/* end statistic-percent */}
-            </div>
-            {/* end col-xs-6 col-sm-3 col-md-3 */}
-
-            {/* countTo */}
-            <div className="col-xs-6 col-sm-3 col-md-3">
-              <div className="statistic-percent" data-perc="126">
-                <div className="facts-icons">
-                  {' '}
-                  <span className="flaticon-commercial-delivery-symbol-of-a-list-on-clipboard-on-a-box-package"></span>{' '}
-                </div>
-                <div className="fact">
-                  {' '}
-                  <span className="percentfactor">126</span>
-                  <p>Order Received</p>
-                </div>
-                {/* end fact */}
-              </div>
-              {/* end statistic-percent */}
-            </div>
-            {/* end col-xs-6 col-sm-3 col-md-3 */}
-
-            {/* countTo */}
-            <div className="col-xs-6 col-sm-3 col-md-3">
-              <div className="statistic-percent" data-perc="274">
-                <div className="facts-icons">
-                  {' '}
-                  <span className="flaticon-free-delivery-truck"></span>{' '}
-                </div>
-                <div className="fact">
-                  {' '}
-                  <span className="percentfactor">274</span>
-                  <p>Free Delivery</p>
-                </div>
-                {/* end fact */}
-              </div>
-              {/* end statistic-percent */}
-            </div>
-            {/* end col-xs-6 col-sm-3 col-md-3 */}
-
-            {/* countTo */}
-            <div className="col-xs-6 col-sm-3 col-md-3">
-              <div className="statistic-percent" data-perc="434">
-                <div className="facts-icons">
-                  {' '}
-                  <span className="flaticon-ocean-transportation"></span>{' '}
-                </div>
-                <div className="fact">
-                  {' '}
-                  <span className="percentfactor">434</span>
-                  <p>Completed Projects</p>
-                </div>
-                {/* end fact */}
-              </div>
-              {/* end statistic-percent */}
-            </div>
-            {/* end col-xs-6 col-sm-3 col-md-3 */}
-          </div>
-          {/* End row */}
-        </div>
-        {/* end container */}
-      </div>
-      {/* =-=-=-=-=-=-= SEPARATOR END =-=-=-=-=-=-= */}
-      {/* =-=-=-=-=-=-= Our Team =-=-=-=-=-=-= */}
-      <section id="team" className="custom-padding white">
-        <div className="container">
-          {/* title-section */}
-          <div className="main-heading text-center">
-            <h2>our caretakes</h2>
-            <p>
-              Cras varius purus in tempus porttitor ut dapibus efficitur
-              sagittis cras vitae lacus metus nunc vulputate facilisis nisi{' '}
-              <br /> eu lobortis erat consequat ut. Aliquam et justo ante. Nam a
-              cursus velit
-            </p>
-          </div>
-          {/* End title-section */}
-
           {/* Row */}
           <div className="row">
-            {/* Team Grid */}
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <div className="team-grid">
-                <div className="team-image">
-                  <img
-                    alt=""
-                    className="img-responsive"
-                    src="images/team/1.jpg"
-                  />
-                  <div className="team-grid-overlay">
-                    <div className="social-media">
-                      <a className="facebook" href="#">
-                        <i className="fa fa-facebook"></i>
+            <div className="col-sm-12 col-xs-12 col-md-4">
+              {/* sidebar */}
+              <div className="profile-sidebar">
+                <form>
+                  <div className="form-group">
+                    <div className="input-group">
+                      <span className="input-group-btn">
+                        <span className="btn btn-default btn-file">
+                          Browse… <input type="file" id="imgInp" />
+                        </span>
+                      </span>
+                      <input type="text" className="form-control" readonly />
+                    </div>
+                    <img
+                      id="img-upload"
+                      className="img-responsive"
+                      src="images/avatar.png"
+                      alt=""
+                    />
+                  </div>
+                </form>
+
+                {/* SIDEBAR MENU */}
+                <div className="profile-usermenu">
+                  <ul className="nav">
+                    <li className="active">
+                      <a href="#">
+                        <i className="glyphicon glyphicon-home"></i>
+                        Overview{' '}
                       </a>
-                      <a className="twitter" href="#">
-                        <i className="fa fa-twitter"></i>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="glyphicon glyphicon-user"></i>
+                        Account Settings{' '}
                       </a>
-                      <a className="google" href="#">
-                        <i className="fa fa-google-plus"></i>
+                    </li>
+                    <li>
+                      <a target="_blank" href="#">
+                        <i className="glyphicon glyphicon-ok"></i>
+                        Tasks{' '}
                       </a>
-                      <a className="linkedin" href="#">
-                        <i className="fa fa-linkedin"></i>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="glyphicon glyphicon-flag"></i>
+                        Help{' '}
                       </a>
+                    </li>
+                  </ul>
+                </div>
+                {/* END MENU */}
+              </div>
+              {/* sidebar end */}
+            </div>
+
+            <div className="col-sm-12 col-xs-12 col-md-8">
+              <div className="row">
+                <div className="profile-section margin-bottom-20">
+                  <div className="profile-tabs">
+                    <ul className="nav nav-justified nav-tabs">
+                      <li className="active">
+                        <a href="#profile" data-toggle="tab">
+                          Profile
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#edit" data-toggle="tab">
+                          Edit Profile
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#payment" data-toggle="tab">
+                          Payment Options
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#settings" data-toggle="tab">
+                          Notification Settings
+                        </a>
+                      </li>
+                    </ul>
+                    <div className="tab-content">
+                      <div
+                        className="profile-edit tab-pane fade in active"
+                        id="profile"
+                      >
+                        <h2 className="heading-md">
+                          Manage your Name, ID and Email Addresses.
+                        </h2>
+                        <p>
+                          Below are the name and email addresses on file for
+                          your account.
+                        </p>
+                        <br />
+                        <dl className="dl-horizontal">
+                          <dt>
+                            <strong>Your name </strong>
+                          </dt>
+                          <dd>Muhammad Umair</dd>
+                          <hr />
+                          <dt>
+                            <strong>Your ID </strong>
+                          </dt>
+                          <dd>UZ1-23456</dd>
+                          <hr />
+                          <dt>
+                            <strong>Company name </strong>
+                          </dt>
+                          <dd>Scripts Bundle</dd>
+                          <hr />
+                          <dt>
+                            <strong>Email Address </strong>
+                          </dt>
+                          <dd>contact@scriptsbundle.com</dd>
+                          <hr />
+                          <dt>
+                            <strong>Phone Number </strong>
+                          </dt>
+                          <dd>(0423) 12-2345-789</dd>
+                          <hr />
+                          <dt>
+                            <strong>Office Number </strong>
+                          </dt>
+                          <dd>(+92) 12-3456-789</dd>
+                          <hr />
+                          <dt>
+                            <strong>Address </strong>
+                          </dt>
+                          <dd>Lahore, PK</dd>
+                          <hr />
+                        </dl>
+                        <button
+                          className="btn btn-sm btn-default"
+                          type="button"
+                        >
+                          Cancel
+                        </button>
+                        <button
+                          className="btn btn-sm btn-primary"
+                          type="button"
+                        >
+                          Save Changes
+                        </button>
+                      </div>
+
+                      <div className="profile-edit tab-pane fade" id="edit">
+                        <h2 className="heading-md">
+                          Manage your Security Settings
+                        </h2>
+                        <p>Change your password.</p>
+                        <br />
+                        <form>
+                          <label>Your Name </label>
+                          <input
+                            type="text"
+                            className="form-control margin-bottom-20"
+                          />
+
+                          <label>
+                            Email Address <span className="color-red">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            className="form-control margin-bottom-20"
+                          />
+
+                          <label>
+                            Contact Number <span className="color-red">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            className="form-control margin-bottom-20"
+                          />
+
+                          <label>
+                            Address <span className="color-red">*</span>
+                          </label>
+                          <textarea
+                            className="form-control margin-bottom-20"
+                            rows="3"
+                          ></textarea>
+
+                          <div className="row">
+                            <div className="col-md-8 col-sm-8 col-xs-12">
+                              <div className="checkbox checkbox-primary">
+                                <input
+                                  type="checkbox"
+                                  checked=""
+                                  id="checkbox2"
+                                />
+                                <label for="checkbox2">
+                                  I read <a href="#">Terms and Conditions</a>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div className="col-md-4 col-sm-4 col-xs-12 text-right">
+                              <button
+                                type="submit"
+                                className="btn btn-primary btn-sm"
+                              >
+                                Update My Info
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+
+                      <div className="profile-edit tab-pane fade" id="payment">
+                        <h2 className="heading-md">
+                          Manage your Payment Settings
+                        </h2>
+                        <p>Below are the payment options for your account.</p>
+                        <br />
+                        <form
+                          action="#"
+                          id="sky-form"
+                          className="sky-form"
+                          novalidate
+                        >
+                          {/*Checkout-Form*/}
+
+                          <div className="payment-group margin-bottom-30">
+                            <div className="radio radio-info radio-inline">
+                              <input
+                                type="radio"
+                                id="inlineRadio1"
+                                defaultValue="option1"
+                                name="radioInline"
+                                checked=""
+                              />
+                              <label for="inlineRadio1"> Visa</label>
+                            </div>
+                            <div className="radio radio-info radio-inline">
+                              <input
+                                type="radio"
+                                id="inlineRadio2"
+                                defaultValue="option1"
+                                name="radioInline"
+                              />
+                              <label for="inlineRadio2"> MasterCard </label>
+                            </div>
+                            <div className="radio radio-info radio-inline">
+                              <input
+                                type="radio"
+                                id="inlineRadio3"
+                                defaultValue="option1"
+                                name="radioInline"
+                              />
+                              <label for="inlineRadio3"> PayPal </label>
+                            </div>
+                          </div>
+
+                          <div className="row">
+                            <div className="col-sm-9 col-md-9">
+                              <input
+                                type="text"
+                                className="form-control margin-bottom-20"
+                                placeholder="Card number"
+                                id="card"
+                                name="card"
+                              />
+                            </div>
+                            <div className="col-sm-3 col-md-3">
+                              <input
+                                type="text"
+                                className="form-control margin-bottom-20"
+                                placeholder="CVV2"
+                                id="cvv"
+                                name="cvv"
+                              />
+                            </div>
+                          </div>
+
+                          <div className="row">
+                            <label className="col-md-4">
+                              <span className="expiration-date">
+                                Expiration Date
+                              </span>{' '}
+                              <span className="color-red">*</span>
+                            </label>
+
+                            <div className="col-md-5 ">
+                              <select name="month" className="form-control ">
+                                <option
+                                  defaultValue="0"
+                                  selected=""
+                                  disabled=""
+                                >
+                                  Month
+                                </option>
+                                <option defaultValue="1">January</option>
+                                <option defaultValue="1">February</option>
+                                <option defaultValue="3">March</option>
+                                <option defaultValue="4">April</option>
+                                <option defaultValue="5">May</option>
+                                <option defaultValue="6">June</option>
+                                <option defaultValue="7">July</option>
+                                <option defaultValue="8">August</option>
+                                <option defaultValue="9">September</option>
+                                <option defaultValue="10">October</option>
+                                <option defaultValue="11">November</option>
+                                <option defaultValue="12">December</option>
+                              </select>
+                            </div>
+                            <div className="col col-md-3">
+                              <label className="input">
+                                <input
+                                  type="text"
+                                  className="form-control margin-bottom-20"
+                                  name="year"
+                                  id="year"
+                                  placeholder="Year"
+                                />
+                              </label>
+                            </div>
+                          </div>
+                          <button
+                            className="btn btn-sm btn-default"
+                            type="button"
+                          >
+                            Cancel
+                          </button>
+                          <button
+                            type="submit"
+                            className="btn btn-sm btn-primary"
+                          >
+                            Save Changes
+                          </button>
+                          {/*End Checkout-Form*/}
+                        </form>
+                      </div>
+
+                      <div className="profile-edit tab-pane fade" id="settings">
+                        <h2 className="heading-md">
+                          Manage your Notifications.
+                        </h2>
+                        <p>Below are the notifications you may manage.</p>
+                        <br />
+                        <form>
+                          <div className="checkbox checkbox-info checkbox-circle">
+                            <input type="checkbox" checked="" id="c1" />
+                            <label for="c1">
+                              Send me email notification when when order is
+                              processed
+                            </label>
+                          </div>
+                          <hr />
+                          <div className="checkbox checkbox-info checkbox-circle">
+                            <input type="checkbox" checked="" id="c2" />
+                            <label for="c2">
+                              Send me email notification when when order is
+                              delivered
+                            </label>
+                          </div>
+                          <hr />
+                          <div className="checkbox checkbox-info checkbox-circle">
+                            <input type="checkbox" checked="" id="c3" />
+                            <label for="c3">
+                              Send me email notification for the latest update
+                            </label>
+                          </div>
+                          <hr />
+                          <div className="checkbox checkbox-info checkbox-circle">
+                            <input type="checkbox" checked="" id="c4" />
+                            <label for="c4">
+                              Receive our monthly newsletter
+                            </label>
+                          </div>
+                          <hr />
+                          <div className="checkbox checkbox-info checkbox-circle">
+                            <input type="checkbox" checked="" id="c5" />
+                            <label for="c5">Email notification</label>
+                          </div>
+                          <hr />
+
+                          <div className="button-group margin-top-20">
+                            <button
+                              className="btn btn-sm btn-default"
+                              type="button"
+                            >
+                              Reset
+                            </button>
+                            <button
+                              type="submit"
+                              className="btn btn-sm btn-primary"
+                            >
+                              Save Changes
+                            </button>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="team-content">
-                  <h2>Roman Reigns</h2>
-                  <p>Founder</p>
-                </div>
               </div>
             </div>
-            {/* Team Grid End*/}
-            {/* Team Grid */}
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <div className="team-grid">
-                <div className="team-image">
-                  <img
-                    alt=""
-                    className="img-responsive"
-                    src="images/team/2.jpg"
-                  />
-                  <div className="team-grid-overlay">
-                    <div className="social-media">
-                      <a className="facebook" href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                      <a className="twitter" href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a className="google" href="#">
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      <a className="linkedin" href="#">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="team-content">
-                  <h2>Jean Carron</h2>
-                  <p>Director</p>
-                </div>
-              </div>
-            </div>
-            {/* Team Grid End*/}
-            {/* Team Grid */}
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <div className="team-grid">
-                <div className="team-image">
-                  <img
-                    alt=""
-                    className="img-responsive"
-                    src="images/team/3.jpg"
-                  />
-                  <div className="team-grid-overlay">
-                    <div className="social-media">
-                      <a className="facebook" href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                      <a className="twitter" href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a className="google" href="#">
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      <a className="linkedin" href="#">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="team-content">
-                  <h2>Arslan Tariq</h2>
-                  <p>CEO</p>
-                </div>
-              </div>
-            </div>
-            {/* Team Grid End*/}
           </div>
+
           {/* Row End */}
         </div>
         {/* end container */}
       </section>
-      {/* =-=-=-=-=-=-= Our Team End =-=-=-=-=-=-= */}
+      {/* =-=-=-=-=-=-= Blog & News end =-=-=-=-=-=-= */}
+
       {/* =-=-=-=-=-=-= FOOTER =-=-=-=-=-=-= */}
       <footer className="footer-area">
         {/*Footer Upper*/}
@@ -851,6 +989,7 @@ const About = () => {
           </div>
         </div>
       </footer>
+
       {/* =-=-=-=-=-=-= Quote Modal =-=-=-=-=-=-= */}
       <div
         data-target="#request-quote"
@@ -862,34 +1001,7 @@ const About = () => {
         </a>
       </div>
       {/* =-=-=-=-=-=-= Quote Modal End =-=-=-=-=-=-= */}
-      {/* =-=-=-=-=-=-= JQUERY =-=-=-=-=-=-= */}
-      <script src="js/jquery.min.js"></script>
-      {/* Bootstrap Core Css  */}
-      <script src="js/bootstrap.min.js"></script>
-      {/* Dropdown Hover  */}
-      <script src="js/bootstrap-dropdownhover.min.js"></script>
-      {/* Jquery Easing */}
-      <script type="text/javascript" src="js/easing.js"></script>
-      {/* Jquery Counter */}
-      <script src="js/jquery.countTo.js"></script>
-      {/* Jquery Waypoints */}
-      <script src="js/jquery.waypoints.js"></script>
-      {/* Jquery Appear Plugin */}
-      <script src="js/jquery.appear.min.js"></script>
-      {/* Jquery Shuffle Portfolio */}
-      <script src="js/jquery.shuffle.min.js"></script>
-      {/* Carousel Slider  */}
-      <script src="js/carousel.min.js"></script>
-      {/* Jquery Migrate */}
-      <script src="js/jquery-migrate.min.js"></script>
-      {/*Style Switcher */}
-      <script src="js/color-switcher.js"></script>
-      {/* Gallery Magnify  */}
-      <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
-      {/* Sticky Bar  */}
-      <script src="js/theia-sticky-sidebar.js"></script>
-      {/* Template Core JS */}
-      <script src="js/custom.js"></script>
+
       {/* =-=-=-=-=-=-= Quote Modal =-=-=-=-=-=-= */}
       <div
         className="modal fade "
@@ -1196,4 +1308,4 @@ const About = () => {
     </div>
   );
 };
-export default About;
+export default Profile;

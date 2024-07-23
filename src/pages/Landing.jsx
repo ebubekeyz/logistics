@@ -50,13 +50,13 @@ const Landing = () => {
           <ul className="nav-right pull-right list-unstyled">
             <li>
               {' '}
-              <a href="login.html">
+              <a href="/login">
                 <i className="fa fa-lock"></i> Login{' '}
               </a>
             </li>
             <li>
               {' '}
-              <a href="sign-up.html">
+              <a href="/register">
                 <i className="fa fa-user"></i> Sign Up{' '}
               </a>
             </li>
@@ -80,14 +80,14 @@ const Landing = () => {
               <ul className="dropdown-menu with-arrow pull-right">
                 <li>
                   {' '}
-                  <a href="profile.html">
+                  <a href="/profile">
                     {' '}
                     <i className="fa fa-user"></i> <span>My Profile</span>{' '}
                   </a>{' '}
                 </li>
                 <li>
                   {' '}
-                  <a href="history.html">
+                  <a href="/history">
                     {' '}
                     <i className="fa fa-check"></i>{' '}
                     <span>Tracking History</span>{' '}
@@ -194,22 +194,7 @@ const Landing = () => {
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="index.html">Home </a>{' '}
-                      </li>
-                      <li>
-                        <a href="index-2.html">Home Page 2</a>{' '}
-                      </li>
-                      <li>
-                        <a href="index-3.html">Home Page 3 (Video Bg)</a>{' '}
-                      </li>
-                      <li>
-                        <a href="index-5.html">Home Order Tracking</a>{' '}
-                      </li>
-                      <li>
-                        <a href="index-4.html">Home Order Tracking 2</a>{' '}
-                      </li>
-                      <li>
-                        <a href="one-page.html">One Page </a>{' '}
+                        <a href="/">Home </a>{' '}
                       </li>
                     </ul>
                   </li>
@@ -224,10 +209,7 @@ const Landing = () => {
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="about.html">About </a>{' '}
-                      </li>
-                      <li>
-                        <a href="about-1.html">About 2</a>{' '}
+                        <a href="/about">About </a>{' '}
                       </li>
                     </ul>
                   </li>
@@ -243,24 +225,12 @@ const Landing = () => {
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="services.html">Services</a>{' '}
-                      </li>
-                      <li>
-                        <a href="services-2.html">Services 2</a>{' '}
-                      </li>
-                      <li>
-                        <a href="services-3.html">Services 3</a>{' '}
-                      </li>
-                      <li>
-                        <a href="services-4.html">Services 4 (Sticky Bar)</a>{' '}
-                      </li>
-                      <li>
-                        <a href="services-details.html">Services Detail</a>{' '}
+                        <a href="/services">Services</a>{' '}
                       </li>
                     </ul>
                   </li>
                   <li className="hidden-sm">
-                    <a href="gallery.html">Gallery</a>
+                    <a href="/gallery">Gallery</a>
                   </li>
                   <li className="dropdown  hidden-sm">
                     <a
@@ -273,65 +243,11 @@ const Landing = () => {
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="blog.html">Grid View </a>{' '}
-                      </li>
-                      <li>
-                        <a href="blog-1.html">Right Sidebar With 2 Column</a>{' '}
-                      </li>
-                      <li>
-                        <a href="blog-2.html">Left Sidebar With 2 Column</a>{' '}
-                      </li>
-                      <li>
-                        <a href="blog-3.html">Masonry Grid</a>{' '}
-                      </li>
-                      <li>
-                        <a href="blog-detail.html">Post With Slider</a>{' '}
-                      </li>
-                      <li>
-                        <a href="blog-detail-2.html">Post With Static Bg</a>{' '}
-                      </li>
-                      <li>
-                        <a href="blog-detail-3.html">Post Full Width</a>{' '}
+                        <a href="/blog">Blog </a>{' '}
                       </li>
                     </ul>
                   </li>
-                  <li className="dropdown">
-                    {' '}
-                    <a
-                      className="dropdown-toggle"
-                      data-hover="dropdown"
-                      data-toggle="dropdown"
-                      data-animations="fadeInUp"
-                    >
-                      Pages <span className="fa fa-angle-down"></span>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <a href="404.html">Error Page</a>{' '}
-                      </li>
-                      <li>
-                        <a href="team.html">Our Team </a>{' '}
-                      </li>
-                      <li>
-                        <a href="icons.html">Icons</a>{' '}
-                      </li>
-                      <li>
-                        <a href="flat-icons.html">Flat Icons</a>{' '}
-                      </li>
-                      <li>
-                        <a href="gallery.html">Gallery</a>
-                      </li>
-                      <li>
-                        <a href="login.html">Sign In</a>
-                      </li>
-                      <li>
-                        <a href="sign-up.html">Sign Up</a>
-                      </li>
-                      <li>
-                        <a href="profile.html">Profile</a>
-                      </li>
-                    </ul>
-                  </li>
+
                   <li className="dropdown">
                     {' '}
                     <a
@@ -344,24 +260,12 @@ const Landing = () => {
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="index-5.html">Tracking Landing Page</a>{' '}
-                      </li>
-                      <li>
-                        <a href="index-4.html">Tracking classNameic Page </a>{' '}
-                      </li>
-                      <li>
-                        <a href="history.html">Tracking Order History</a>{' '}
-                      </li>
-                      <li>
-                        <a href="online-booking.html">Cargo Booking</a>{' '}
+                        <a href="/history">Tracking Landing Page</a>{' '}
                       </li>
                     </ul>
                   </li>
                 </ul>
-                <a
-                  href="online-booking.html"
-                  className="btn btn-primary pull-right"
-                >
+                <a href="/booking" className="btn btn-primary pull-right">
                   Cargo Booking
                 </a>{' '}
               </div>
@@ -1040,14 +944,13 @@ const Landing = () => {
         </div>
         {/* end container */}
       </section>
-      {/* =-=-=-=-=-=-= Services =-=-=-=-=-=-= */}
 
-      {/* =-=-=-=-=-=-= Our Services =-=-=-=-=-=-= */}
-      <section className="custom-padding services">
-        <div className="container">
-          {/* title-section */}
-          <div className="main-heading text-center">
-            <h2>our services</h2>
+      {/* <!-- =-=-=-=-=-=-= Our Process =-=-=-=-=-=-= --> */}
+      <section id="process" class="section-padding-80 ">
+        <div class="container">
+          {/* <!-- title-section --> */}
+          <div class="main-heading text-center">
+            <h2>OUR Process</h2>
             <p>
               Cras varius purus in tempus porttitor ut dapibus efficitur
               sagittis cras vitae lacus metus nunc vulputate facilisis nisi{' '}
@@ -1055,13 +958,84 @@ const Landing = () => {
               cursus velit
             </p>
           </div>
-          {/* End title-section */}
+          {/* <!-- End title-section --> */}
 
+          {/* <!-- Row --> */}
+          <div class="row">
+            <div class="col-md-12 col-xs-12 com-sm-12 our-process process-steps text-left">
+              <ul>
+                <li>
+                  <span class="process-icon">
+                    <i class="flaticon-man-standing-with-delivery-box"></i>
+                  </span>
+                  <div class="process-detail">
+                    <h3>Step: 1</h3>
+                    <h2>Create Your Account</h2>
+                    <div class="clearboth"></div>
+                  </div>
+                </li>
+                <li>
+                  <span class="process-icon">
+                    <i class="flaticon-commercial-delivery-symbol-of-a-list-on-clipboard-on-a-box-package"></i>
+                  </span>
+                  <div class="process-detail">
+                    <h3>Step: 2</h3>
+                    <h2>Place Your Order</h2>
+                    <div class="clearboth"></div>
+                  </div>
+                </li>
+                <li>
+                  <span class="process-icon">
+                    <i class="flaticon-delivery-worker-giving-a-box-to-a-receiver"></i>
+                  </span>
+                  <div class="process-detail">
+                    <h3>Step: 3</h3>
+                    <h2>We Collect It</h2>
+                    <div class="clearboth"></div>
+                  </div>
+                </li>
+                <li>
+                  <span class="process-icon">
+                    <i class="flaticon-logistics-delivery-truck-in-movement"></i>
+                  </span>
+                  <div class="process-detail">
+                    <h3>Step: 4</h3>
+                    <h2>Delivered</h2>
+                    <div class="clearboth"></div>
+                  </div>
+                </li>
+                <div class="clearfix"></div>
+              </ul>
+            </div>
+          </div>
+          {/* <!-- Row End --> */}
+        </div>
+        {/* <!-- end container --> */}
+      </section>
+      {/* <!-- =-=-=-=-=-=-= Our Process End =-=-=-=-=-=-= --> */}
+
+      {/* =-=-=-=-=-=-= Services =-=-=-=-=-=-= */}
+
+      {/* =-=-=-=-=-=-= Our Services =-=-=-=-=-=-= */}
+      <section className="custom-padding services">
+        <div className="container">
+          {/* <!-- title-section --> */}
+          <div class="main-heading text-center">
+            <h2>our services</h2>
+            <p>
+              Cras varius purus in tempus porttitor ut dapibus efficitur
+              sagittis cras vitae lacus metus nunc vulputate facilisis nisi{' '}
+              <br />
+              eu lobortis erat consequat ut. Aliquam et justo ante. Nam a cursus
+              velit
+            </p>
+          </div>
+          {/* <!-- End title-section --> */}
           {/* Row */}
           <div className="row">
-            <div id="services">
+            <div id="services-2">
               {/* Service Item List */}
-              <div className="item">
+              <div className="col-md-4 col-xs-12 col-sm-6">
                 {/* services grid */}
                 <div className="services-grid">
                   <div className="icons">
@@ -1076,7 +1050,7 @@ const Landing = () => {
                 </div>
               </div>
               {/* services grid */}
-              <div className="item">
+              <div className="col-md-4 col-xs-12 col-sm-6">
                 <div className="services-grid">
                   <div className="icons">
                     {' '}
@@ -1090,7 +1064,7 @@ const Landing = () => {
                 </div>
               </div>
               {/* services grid */}
-              <div className="item">
+              <div className="col-md-4 col-xs-12 col-sm-6">
                 <div className="services-grid">
                   <div className="icons">
                     {' '}
@@ -1103,16 +1077,20 @@ const Landing = () => {
                   </p>
                 </div>
               </div>
+
+              <div className="clearfix  hidden-sm"></div>
               {/* Service Item List */}
-              <div className="item">
+
+              <div className="clearfix"></div>
+              <div className="col-md-4 col-xs-12 col-sm-6">
                 {/* services grid */}
 
                 <div className="services-grid">
                   <div className="icons">
                     {' '}
-                    <i className="flaticon-view-symbol-on-delivery-opened-box"></i>
+                    <i className="flaticon-international-delivery-symbol"></i>
                   </div>
-                  <h4>ware housing</h4>
+                  <h4>global trasnport</h4>
                   <p>
                     We have the right caring, experience and dedicated
                     professional for you.
@@ -1120,13 +1098,13 @@ const Landing = () => {
                 </div>
               </div>
               {/* services grid */}
-              <div className="item">
+              <div className="col-md-4 col-xs-12 col-sm-6">
                 <div className="services-grid">
                   <div className="icons">
                     {' '}
-                    <i className="flaticon-sea-ship-with-containers"></i>
+                    <i className="flaticon-logistics-delivery-truck-in-movement"></i>
                   </div>
-                  <h4>Sea Freight</h4>
+                  <h4>fast delivery</h4>
                   <p>
                     We have the right caring, experience and dedicated
                     professional for you.
@@ -1134,20 +1112,20 @@ const Landing = () => {
                 </div>
               </div>
               {/* services grid */}
-              <div className="item">
+              <div className="col-md-4 col-xs-12 col-sm-6">
                 <div className="services-grid">
                   <div className="icons">
                     {' '}
-                    <i className="flaticon-delivery-truck-with-packages-behind"></i>
+                    <i className="flaticon-24-hours-symbol"></i>
                   </div>
-                  <h4>Door To Door Devivery </h4>
+                  <h4>24/7 Support </h4>
                   <p>
                     We have the right caring, experience and dedicated
                     professional for you.
                   </p>
                 </div>
               </div>
-
+              <div className="clearfix"></div>
               {/* Service Item List End */}
             </div>
           </div>
@@ -1156,7 +1134,6 @@ const Landing = () => {
         {/* end container */}
       </section>
       {/* =-=-=-=-=-=-= Our Services-end =-=-=-=-=-=-= */}
-
       {/* =-=-=-=-=-=-= Quote Seection =-=-=-=-=-=-= */}
 
       <section className="quote" id="quote">
@@ -1793,7 +1770,7 @@ const Landing = () => {
       </section>
       {/* =-=-=-=-=-=-= Blog & News end =-=-=-=-=-=-= */}
 
-      {/* =-=-=-=-=-=-= PARALLEX TESTIMONILS =-=-=-=-=-=-= */}
+      {/* <!-- =-=-=-=-=-=-= PARALLEX TESTIMONILS =-=-=-=-=-=-= --> */}
       <section className="testimonial-bg parallex section-padding text-center">
         <div className="container">
           <div id="testimonials">
@@ -1816,7 +1793,7 @@ const Landing = () => {
                 <div className="profession">Founder, Oxford</div>
               </div>
             </div>
-            <div className="item">
+            <div class="item">
               <div className="col-sm-12 col-md-12 col-xs-12 testimonial-grid text-center">
                 {' '}
                 <img
@@ -1869,15 +1846,15 @@ const Landing = () => {
                   consequat leo. Fusce tempus vitae erat at consequat. Aenean
                   commodo felis odio, ut congue est mollis non. Sed tincidunt.
                 </p>
-                <div className="name">John Doe</div>
-                <div className="profession">Founder, Oxford</div>
+                <div class="name">John Doe</div>
+                <div class="profession">Founder, Oxford</div>
               </div>
             </div>
           </div>
         </div>
-        {/* end container */}
+        {/* <!-- end container --> */}
       </section>
-      {/* =-=-=-=-=-=-= PARALLEX TESTIMONILS END =-=-=-=-=-=-= */}
+      {/* <!-- =-=-=-=-=-=-= PARALLEX TESTIMONILS END =-=-=-=-=-=-= --> */}
 
       {/* =-=-=-=-=-=-= Blog & News =-=-=-=-=-=-= */}
       <section id="blog" className="custom-padding">
@@ -2336,19 +2313,17 @@ const Landing = () => {
                       <h2>Site Links</h2>
                       <ul>
                         <li>
-                          <a href="about.html">About Us</a>
+                          <a href="/about">About Us</a>
+                        </li>
+
+                        <li>
+                          <a href="/services">Our Services</a>
                         </li>
                         <li>
-                          <a href="team.html">Our Team</a>
+                          <a href="/blog">Blog</a>
                         </li>
                         <li>
-                          <a href="services.html">Our Services</a>
-                        </li>
-                        <li>
-                          <a href="index-7.html">Blog</a>
-                        </li>
-                        <li>
-                          <a href="contact.html">Contact Us</a>
+                          <a href="/contact">Contact Us</a>
                         </li>
                       </ul>
                     </div>
