@@ -3,6 +3,7 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import {
   About,
   Blog,
+  BlogDetails,
   Booking,
   Contact,
   Error,
@@ -13,6 +14,7 @@ import {
   Login,
   Profile,
   Register,
+  ServiceDetails,
   Services,
 } from './pages';
 import { ErrorElement } from './component';
@@ -76,6 +78,16 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: <Contact />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'service-details/:id',
+        element: <ServiceDetails />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'blog-details/:id',
+        element: <BlogDetails />,
         errorElement: <ErrorElement />,
       },
     ],
