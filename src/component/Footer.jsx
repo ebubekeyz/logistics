@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 const Footer = () => {
   return (
     <div>
@@ -162,12 +164,9 @@ const Footer = () => {
           <div className="auto-container clearfix">
             {/*Copyright*/}
             <div className="copyright text-center">
-              Copyright 2016 &copy; Theme Created By{' '}
-              <a
-                target="_blank"
-                href="http://themeforest.net/user/scriptsbundle/portfolio"
-              >
-                Scriptsbundle
+              Copyright {moment().format('YYYY')} &copy; Created By{' '}
+              <a target="_blank" href="https://optilogix.netlify.app">
+                Code Addict
               </a>{' '}
               All Rights Reserved
             </div>

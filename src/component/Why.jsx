@@ -1,347 +1,69 @@
-import { Breadcrumb, CallToAction } from '../component';
-
-const Gallery = () => {
+const Why = () => {
   return (
     <div>
-      {/* =-=-=-=-=-=-= PRELOADER =-=-=-=-=-=-= */}
-      <div className="preloader">
-        <span className="preloader-gif"></span>
-      </div>
-
-      <Breadcrumb
-        header1="Our Memories"
-        header2="Gallery"
-        link="/gallery"
-        linkText="Gallery"
-      />
-
-      {/* =-=-=-=-=-=-= Gallery =-=-=-=-=-=-= */}
-      <section id="gallery" className="custom-padding">
+      {' '}
+      <section className="quote" id="quote">
         <div className="container">
-          <div className="portfolio-container text-center">
-            <ul id="portfolio-grid" className="three-column hover-two">
-              <li className="portfolio-item gutter">
-                <div className="portfolio">
-                  <div className="tt-overlay"></div>
-                  <img src="images/portfolio/1.jpg" alt="" />
+          <div className="row clearfix">
+            {/*Column*/}
+            <div className="col-md-7 col-sm-12 col-xs-12 ">
+              <div className="choose-title">
+                <h3>More about us</h3>
+                <h2>Why People Choose Us</h2>
+                <p>
+                  Ut consequat velit a metus accumsan, vel tempor nulla blandit.
+                  Integer euismod magna vel mi congue suscipit. Praesent quis
+                  facilisis neque. Donec scelerisque nibh vitae sapien ornare
+                  efficitur.
+                </p>
+              </div>
+              <div className="choose-services">
+                <ul className="choose-list">
+                  {/* feature */}
+                  <li>
+                    <div className="choose-box">
+                      {' '}
+                      <span className="iconbox">
+                        <i className="flaticon-logistics-delivery-truck-and-clock"></i>
+                      </span>
+                      <div className="choose-box-content">
+                        <h4>Fast Worldwide delivery</h4>
+                        <p>
+                          Donec dignissim enim id urna fermentum, non hendrerit
+                          sem volutpat ellentesque pretium sapien nec metus.non
+                          hendrerit sem volutpat ellentesque pretium sapien nec
+                          metus
+                        </p>
+                      </div>
+                    </div>
+                  </li>
 
-                  <div className="portfolio-info">
-                    <h3 className="project-title">Project Title</h3>
-                    <a href="#" className="links">
-                      App Design
-                    </a>
-                  </div>
-                  {/* /.project-info */}
+                  {/* feature */}
+                  <li>
+                    <div className="choose-box">
+                      {' '}
+                      <span className="iconbox">
+                        <i className="flaticon-woman-with-headset"></i>
+                      </span>
+                      <div className="choose-box-content">
+                        <h4>Safety & Compliance</h4>
+                        <p>
+                          Donec dignissim enim id urna fermentum, non hendrerit
+                          sem volutpat ellentesque pretium sapien nec metus.non
+                          hendrerit sem volutpat ellentesque pretium sapien nec
+                          metus
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                {/* end choose-list */}
+              </div>
+            </div>
 
-                  <ul className="portfolio-details">
-                    <li>
-                      <a className="tt-lightbox" href="images/portfolio/1.jpg">
-                        <i className="fa fa-search"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-external-link"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                {/* /.portfolio */}
-              </li>
-              <li className="portfolio-item gutter">
-                <div className="portfolio">
-                  <div className="tt-overlay"></div>
-                  <img src="images/portfolio/2.jpg" alt="" />
-
-                  <div className="portfolio-info">
-                    <h3 className="project-title">Project Title</h3>
-                    <a href="#" className="links">
-                      App Design
-                    </a>
-                  </div>
-                  {/* /.project-info */}
-
-                  <ul className="portfolio-details">
-                    <li>
-                      <a className="tt-lightbox" href="images/portfolio/2.jpg">
-                        <i className="fa fa-search"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-external-link"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                {/* /.portfolio */}
-              </li>
-              <li className="portfolio-item gutter">
-                <div className="portfolio">
-                  <div className="tt-overlay"></div>
-                  <img src="images/portfolio/3.jpg" alt="" />
-
-                  <div className="portfolio-info">
-                    <h3 className="project-title">Project Title</h3>
-                    <a href="#" className="links">
-                      App Design
-                    </a>
-                  </div>
-                  {/* /.project-info */}
-
-                  <ul className="portfolio-details">
-                    <li>
-                      <a className="tt-lightbox" href="images/portfolio/3.jpg">
-                        <i className="fa fa-search"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-external-link"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                {/* /.portfolio */}
-              </li>
-
-              <li className="portfolio-item gutter">
-                <div className="portfolio">
-                  <div className="tt-overlay"></div>
-                  <img src="images/portfolio/4.jpg" alt="" />
-
-                  <div className="portfolio-info">
-                    <h3 className="project-title">Project Title</h3>
-                    <a href="#" className="links">
-                      App Design
-                    </a>
-                  </div>
-                  {/* /.project-info */}
-
-                  <ul className="portfolio-details">
-                    <li>
-                      <a className="tt-lightbox" href="images/portfolio/4.jpg">
-                        <i className="fa fa-search"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-external-link"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                {/* /.portfolio */}
-              </li>
-              <li className="portfolio-item gutter">
-                <div className="portfolio">
-                  <div className="tt-overlay"></div>
-                  <img src="images/portfolio/5.jpg" alt="" />
-
-                  <div className="portfolio-info">
-                    <h3 className="project-title">Project Title</h3>
-                    <a href="#" className="links">
-                      App Design
-                    </a>
-                  </div>
-                  {/* /.project-info */}
-
-                  <ul className="portfolio-details">
-                    <li>
-                      <a className="tt-lightbox" href="images/portfolio/5.jpg">
-                        <i className="fa fa-search"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-external-link"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                {/* /.portfolio */}
-              </li>
-              <li className="portfolio-item gutter">
-                <div className="portfolio">
-                  <div className="tt-overlay"></div>
-                  <img src="images/portfolio/6.jpg" alt="" />
-
-                  <div className="portfolio-info">
-                    <h3 className="project-title">Project Title</h3>
-                    <a href="#" className="links">
-                      App Design
-                    </a>
-                  </div>
-                  {/* /.project-info */}
-
-                  <ul className="portfolio-details">
-                    <li>
-                      <a className="tt-lightbox" href="images/portfolio/6.jpg">
-                        <i className="fa fa-search"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-external-link"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                {/* /.portfolio */}
-              </li>
-
-              <li className="portfolio-item gutter">
-                <div className="portfolio">
-                  <div className="tt-overlay"></div>
-                  <img src="images/portfolio/7.jpg" alt="" />
-
-                  <div className="portfolio-info">
-                    <h3 className="project-title">Project Title</h3>
-                    <a href="#" className="links">
-                      App Design
-                    </a>
-                  </div>
-                  {/* /.project-info */}
-
-                  <ul className="portfolio-details">
-                    <li>
-                      <a className="tt-lightbox" href="images/portfolio/7.jpg">
-                        <i className="fa fa-search"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-external-link"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                {/* /.portfolio */}
-              </li>
-              <li className="portfolio-item gutter">
-                <div className="portfolio">
-                  <div className="tt-overlay"></div>
-                  <img src="images/portfolio/8.jpg" alt="" />
-
-                  <div className="portfolio-info">
-                    <h3 className="project-title">Project Title</h3>
-                    <a href="#" className="links">
-                      App Design
-                    </a>
-                  </div>
-                  {/* /.project-info */}
-
-                  <ul className="portfolio-details">
-                    <li>
-                      <a className="tt-lightbox" href="images/portfolio/8.jpg">
-                        <i className="fa fa-search"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-external-link"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                {/* /.portfolio */}
-              </li>
-              <li className="portfolio-item gutter">
-                <div className="portfolio">
-                  <div className="tt-overlay"></div>
-                  <img src="images/portfolio/9.jpg" alt="" />
-
-                  <div className="portfolio-info">
-                    <h3 className="project-title">Project Title</h3>
-                    <a href="#" className="links">
-                      App Design
-                    </a>
-                  </div>
-                  {/* /.project-info */}
-
-                  <ul className="portfolio-details">
-                    <li>
-                      <a className="tt-lightbox" href="images/portfolio/9.jpg">
-                        <i className="fa fa-search"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-external-link"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                {/* /.portfolio */}
-              </li>
-            </ul>
-          </div>
-
-          {/* portfolio-container */}
-        </div>
-        {/* end container */}
-      </section>
-      {/* =-=-=-=-=-=-= Blog & News end =-=-=-=-=-=-= */}
-
-      <CallToAction
-        text="Not sure which solution fits you business needs?"
-        text2="Get a quote"
-        link="javascript:void(0)"
-      />
-
-      {/* =-=-=-=-=-=-= Quote Modal =-=-=-=-=-=-= */}
-      <div
-        data-target="#request-quote"
-        data-toggle="modal"
-        className="quote-button hidden-xs"
-      >
-        <a className="btn btn-primary" href="javascript:void(0)">
-          <i className="fa fa-envelope"></i>
-        </a>
-      </div>
-      {/* =-=-=-=-=-=-= Quote Modal End =-=-=-=-=-=-= */}
-
-      {/* =-=-=-=-=-=-= JQUERY =-=-=-=-=-=-= */}
-      <script src="js/jquery.min.js"></script>
-      {/* Bootstrap Core Css  */}
-      <script src="js/bootstrap.min.js"></script>
-      {/* Dropdown Hover  */}
-      <script src="js/bootstrap-dropdownhover.min.js"></script>
-      {/* Jquery Easing */}
-      <script type="text/javascript" src="js/easing.js"></script>
-      {/* Jquery Counter */}
-      <script src="js/jquery.countTo.js"></script>
-      {/* Jquery Waypoints */}
-      <script src="js/jquery.waypoints.js"></script>
-      {/* Jquery Appear Plugin */}
-      <script src="js/jquery.appear.min.js"></script>
-      {/* Jquery Shuffle Portfolio */}
-      <script src="js/jquery.shuffle.min.js"></script>
-      {/* Carousel Slider  */}
-      <script src="js/carousel.min.js"></script>
-      {/* Jquery Migrate */}
-      <script src="js/jquery-migrate.min.js"></script>
-      {/*Style Switcher */}
-      <script src="js/color-switcher.js"></script>
-      {/* Gallery Magnify  */}
-      <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
-      {/* Sticky Bar  */}
-      <script src="js/theia-sticky-sidebar.js"></script>
-      {/* Template Core JS */}
-      <script src="js/custom.js"></script>
-      {/* =-=-=-=-=-=-= Quote Modal =-=-=-=-=-=-= */}
-      <div
-        className="modal fade "
-        id="request-quote"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="myModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="modal-body">
-              <div className="quotation-box-1">
+            {/* Quote Form */}
+            <div className="col-md-5 col-sm-12 no-extra col-xs-12">
+              <div className="quotation-box">
                 <h2>REQUEST A QUOTE</h2>
                 <div className="desc-text">
                   <p>
@@ -363,6 +85,7 @@ const Gallery = () => {
                         name="your-name"
                       />
                     </div>
+
                     {/*Form Group*/}
                     <div className="form-group col-md-6 col-sm-6 col-xs-12">
                       <input
@@ -373,6 +96,7 @@ const Gallery = () => {
                         name="your-subject"
                       />
                     </div>
+
                     {/*Form Group*/}
                     <div className="form-group col-md-12 col-sm-12 col-xs-12">
                       <input
@@ -383,12 +107,10 @@ const Gallery = () => {
                         name="your-email"
                       />
                     </div>
+
                     {/*Form Group*/}
                     <div className="form-group col-md-12 col-sm-12 col-xs-12">
-                      <select
-                        className="quote-select form-control"
-                        name="sel-location"
-                      >
+                      <select className="form-control" name="sel-location">
                         <option>Select Location</option>
                         <option>Afghanistan</option>
                         <option>Albania</option>
@@ -607,6 +329,7 @@ const Gallery = () => {
                         <option>Zimbabwe</option>
                       </select>
                     </div>
+
                     {/*Form Group*/}
                     <div className="form-group col-md-12 col-sm-12 col-xs-12">
                       <textarea
@@ -617,6 +340,7 @@ const Gallery = () => {
                         name="your-message"
                       ></textarea>
                     </div>
+
                     {/*Form Group*/}
                     <div className="form-group col-md-12 col-sm-12 col-xs-12 text-right">
                       {' '}
@@ -627,12 +351,9 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-          {/* /.modal-content */}
         </div>
-        {/* /.modal-dialog */}
-      </div>
-      {/* =-=-=-=-=-=-= Quote Modal End =-=-=-=-=-=-= */}
+      </section>
     </div>
   );
 };
-export default Gallery;
+export default Why;

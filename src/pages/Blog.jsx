@@ -1,4 +1,4 @@
-import { Breadcrumb } from '../component';
+import { Breadcrumb, CallToAction } from '../component';
 
 const Blog = () => {
   return (
@@ -355,34 +355,11 @@ const Blog = () => {
       </section>
       {/* =-=-=-=-=-=-= Blog & News end =-=-=-=-=-=-= */}
 
-      {/* =-=-=-=-=-=-= Call To Action =-=-=-=-=-=-= */}
-      <div className="parallex-small ">
-        <div className="container">
-          <div className="row custom-padding-20 ">
-            {' '}
-            <div className="col-md-8 col-sm-8">
-              <div className="parallex-text">
-                <h4>Not sure which solution fits you business needs?</h4>
-              </div>
-              {/* end subsection-text */}
-            </div>
-            {/* end col-md-8 */}
-            <div className="col-md-4 col-sm-4">
-              <div className="parallex-button">
-                {' '}
-                <a href="javascript:void(0)" className="btn btn-lg btn-clean">
-                  Get a quote <i className="fa fa-angle-double-right "></i>
-                </a>{' '}
-              </div>
-              {/* end parallex-button */}
-            </div>
-            {/* end col-md-4 */}
-          </div>
-          {/* end row */}
-        </div>
-        {/* end container */}
-      </div>
-      {/* =-=-=-=-=-=-= Call To Action End =-=-=-=-=-=-= */}
+      <CallToAction
+        text="Not sure which solution fits you business needs?"
+        text2="Get a quote"
+        link="javascript:void(0)"
+      />
 
       {/* =-=-=-=-=-=-= Quote Modal =-=-=-=-=-=-= */}
       <div

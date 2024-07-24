@@ -1,4 +1,4 @@
-import { Breadcrumb } from '../component';
+import { Breadcrumb, CallToAction } from '../component';
 
 const Services = () => {
   return (
@@ -164,34 +164,11 @@ const Services = () => {
       </section>
       {/* =-=-=-=-=-=-= Our Services-end =-=-=-=-=-=-= */}
 
-      {/* =-=-=-=-=-=-= Call To Action =-=-=-=-=-=-= */}
-      <div className="parallex-small ">
-        <div className="container">
-          <div className="row custom-padding-20 ">
-            {' '}
-            <div className="col-md-8 col-sm-8">
-              <div className="parallex-text">
-                <h4>Not sure which solution fits you business needs?</h4>
-              </div>
-              {/* end subsection-text */}
-            </div>
-            {/* end col-md-8 */}
-            <div className="col-md-4 col-sm-4">
-              <div className="parallex-button">
-                {' '}
-                <a href="javascript:void(0)" className="btn btn-lg btn-clean">
-                  Get a quote <i className="fa fa-angle-double-right "></i>
-                </a>{' '}
-              </div>
-              {/* end parallex-button */}
-            </div>
-            {/* end col-md-4 */}
-          </div>
-          {/* end row */}
-        </div>
-        {/* end container */}
-      </div>
-      {/* =-=-=-=-=-=-= Call To Action End =-=-=-=-=-=-= */}
+      <CallToAction
+        text="Not sure which solution fits you business needs?"
+        text2="Get a quote"
+        link="javascript:void(0)"
+      />
 
       {/* =-=-=-=-=-=-= Quote Modal =-=-=-=-=-=-= */}
       <div
@@ -205,35 +182,6 @@ const Services = () => {
       </div>
       {/* =-=-=-=-=-=-= Quote Modal End =-=-=-=-=-=-= */}
 
-      {/* =-=-=-=-=-=-= JQUERY =-=-=-=-=-=-= */}
-      <script src="js/jquery.min.js"></script>
-      {/* Bootstrap Core Css  */}
-      <script src="js/bootstrap.min.js"></script>
-      {/* Dropdown Hover  */}
-      <script src="js/bootstrap-dropdownhover.min.js"></script>
-      {/* Jquery Easing */}
-      <script type="text/javascript" src="js/easing.js"></script>
-      {/* Jquery Counter */}
-      <script src="js/jquery.countTo.js"></script>
-      {/* Jquery Waypoints */}
-      <script src="js/jquery.waypoints.js"></script>
-      {/* Jquery Appear Plugin */}
-      <script src="js/jquery.appear.min.js"></script>
-      {/* Jquery Shuffle Portfolio */}
-      <script src="js/jquery.shuffle.min.js"></script>
-      {/* Carousel Slider  */}
-      <script src="js/carousel.min.js"></script>
-      {/* Jquery Migrate */}
-      <script src="js/jquery-migrate.min.js"></script>
-      {/*Style Switcher */}
-      <script src="js/color-switcher.js"></script>
-      {/* Gallery Magnify  */}
-      <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
-      {/* Sticky Bar  */}
-      <script src="js/theia-sticky-sidebar.js"></script>
-      {/* Template Core JS */}
-      <script src="js/custom.js"></script>
-      {/* =-=-=-=-=-=-= Quote Modal =-=-=-=-=-=-= */}
       <div
         className="modal fade "
         id="request-quote"
