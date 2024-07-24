@@ -1,6 +1,7 @@
 const Header = () => {
-  return <div>
-     {/* =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= */}
+  return (
+    <div>
+      {/* =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= */}
       <section className="top-bar">
         <div className="container">
           <div className="left-text nav-left pull-left">
@@ -222,7 +223,7 @@ const Header = () => {
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="/history">Tracking Landing Page</a>{' '}
+                        <a href="/history">Track Order</a>{' '}
                       </li>
                     </ul>
                   </li>
@@ -240,6 +241,7 @@ const Header = () => {
         {/* Menu  End */}
       </header>
       {/* =-=-=-=-=-=-= HEADER END =-=-=-=-=-=-= */}
-  </div>;
+    </div>
+  );
 };
 export default Header;

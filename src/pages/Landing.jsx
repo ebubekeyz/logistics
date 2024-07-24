@@ -289,9 +289,14 @@ const Landing = () => {
                   letterSpacing: '1px',
                 }}
               >
-                <a className="btn btn-colored btn-lg" href="#quote">
-                  Request Quote
-                </a>
+                <div data-target="#request-quote" data-toggle="modal">
+                  <a
+                    className="btn btn-colored btn-lg"
+                    href="javascript:void(0)"
+                  >
+                    Request Quote
+                  </a>
+                </div>
               </div>
             </li>
 

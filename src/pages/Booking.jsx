@@ -1,3 +1,5 @@
+import Breadcrumb from '../component/Breadcrumb';
+
 const Booking = () => {
   return (
     <div>
@@ -6,35 +8,12 @@ const Booking = () => {
         <span className="preloader-gif"></span>
       </div>
 
-      
-
-      {/* =-=-=-=-=-=-= PAGE BREADCRUMB =-=-=-=-=-=-= */}
-      <section className="breadcrumbs-area parallex">
-        <div className="container">
-          <div className="row">
-            <div className="page-title">
-              <div className="col-sm-12 col-md-6 page-heading text-left">
-                <h3>book your order</h3>
-                <h2>Online Cargo Booking</h2>
-              </div>
-              <div className="col-sm-12 col-md-6 text-right">
-                <ul className="breadcrumbs">
-                  <li>
-                    <a href="#">home</a>
-                  </li>
-                  <li>
-                    <a href="#">pages</a>
-                  </li>
-                  <li>
-                    <a href="#">tracking</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* =-=-=-=-=-=-= PAGE BREADCRUMB END =-=-=-=-=-=-= */}
+      <Breadcrumb
+        header1="Book your order"
+        header2="Online cargo booking"
+        link="/booking"
+        linkText="booking"
+      />
 
       {/* =-=-=-=-=-=-= Tracking History =-=-=-=-=-=-= */}
       <section id="contact-us" className="section-padding-70 contact-bg">
@@ -746,7 +725,6 @@ const Booking = () => {
       </section>
       {/* =-=-=-=-=-=-= Tracking History End =-=-=-=-=-=-= */}
 
-     
       {/* =-=-=-=-=-=-= Quote Modal =-=-=-=-=-=-= */}
       <div
         data-target="#request-quote"
